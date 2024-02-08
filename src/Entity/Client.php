@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Client;
 
 use App\Repository\ClientRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -75,11 +75,17 @@ class Client implements UserInterface
     public function getUsername(): string
     {
         // Retournez le nom d'utilisateur de l'utilisateur
-        return $this->email;
+        return $this->Email;
     }
 
     public function eraseCredentials(): void
     {
         // Vous pouvez effectuer des opérations liées à la suppression des informations d'identification si nécessaire
+    }
+
+    public function getUserIdentifier(): string
+    {
+        // Retournez l'identifiant de l'utilisateur, par exemple, l'adresse e-mail
+        return $this->Email;
     }
 }

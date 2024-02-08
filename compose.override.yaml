@@ -1,8 +1,13 @@
-version: '3'
+ #version: '3'
 
-services:
-###> doctrine/doctrine-bundle ###
-  database:
-    ports:
-      - "5432"
-###< doctrine/doctrine-bundle ###
+ #services:
+   #database:
+     #image: postgres:latest
+     #environment:
+      # POSTGRES_DB: your_database_name
+      # POSTGRES_USER: your_database_user
+       #POSTGRES_PASSWORD: your_database_password
+     #ports:
+      # - "5432:5432"
+
+  # Ajoutez d'autres services ou configurations nécessaires ici

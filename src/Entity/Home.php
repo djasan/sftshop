@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Entity\couleur;
+namespace App\Entity;
 
-use App\Repository\CouleurRepository;
+use App\Repository\HomeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: CouleurRepository::class)]
-class Couleur
+#[ORM\Entity(repositoryClass: HomeRepository::class)]
+class Home
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
