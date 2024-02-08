@@ -17,14 +17,13 @@
     {# Header #}
     <header>
         <div>
-        <a href="{{ path('app_home') }}"><h1>TShop</h1></a>
-
+            <a href="{{ path('/homepage') }}"><h1>TShop</h1></a>
         </div>
         <div>
             <nav>
                 <ul>
-                    <li><a href="{{ path('catalogue') }}">Catalogue</a></li>
-                    <li><a href="{{ path('compte') }}">Compte</a></li>
+                    <li><a href="{{ path('/catalogue') }}">Catalogue</a></li>
+                    <li><a href="{{ path('/compte') }}">Compte</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +32,7 @@
             {% if app.user %}
                 {# Si l'utilisateur est connecté #}
                 <img src="{{ asset('path/to/connected-user-avatar.jpg') }}" alt="Avatar">
-                <button><a href="{{ path('user_account') }}">Compte</a></button>
+                <button><a href="{{ path('client') }}">Compte</a></button>
                 <button><a href="{{ path('logout') }}">Déconnexion</a></button>
             {% else %}
                 {# Si l'utilisateur n'est pas connecté #}
